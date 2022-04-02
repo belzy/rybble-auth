@@ -4,7 +4,7 @@ const authRouter = express.Router();
 
 authRouter.get('/auth', (req: Request, res: Response): void => {
 
-  res.send('Gateway Auth Endpoint');
+  res.send('Auth Service Endpoint');
 
 });
 
