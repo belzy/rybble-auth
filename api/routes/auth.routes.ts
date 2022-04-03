@@ -1,13 +1,10 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
+import {
+  emailAuthController,
+} from '../controllers';
 
 const authRouter = express.Router();
 
-authRouter.get('/auth', (req: Request, res: Response): void => {
+authRouter.get('/email', emailAuthController);
 
-  res.send('Auth Service Endpoint');
-
-});
-
-export {
-  authRouter,
-};
+export default authRouter;
