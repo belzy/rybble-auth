@@ -1,12 +1,19 @@
 import { Request, Response } from 'express';
 import passport from 'passport';
-import LocalStrategy from 'passport-local';
+import { Strategy as LocalStrategy } from 'passport-local';
 
-const emailAuthController = (req: Request, res: Response): void => {
+passport.use(new LocalStrategy((username, password, cb) => {
 
-  res.send('Auth Service Endpoint');
+  
+
+}));
+
+const handlePostRegister = (req: Request, res: Response): void => {
+  
+
+  res.json(req.body);
 };
 
 export {
-  emailAuthController,
+  handlePostRegister,
 };

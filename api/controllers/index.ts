@@ -1,7 +1,7 @@
 import {
-  emailAuthController,
+  handlePostRegister,
 } from './auth.controllers';
 
 export {
-  emailAuthController,
+  handlePostRegister,
 };

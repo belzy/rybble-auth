@@ -1,10 +1,10 @@
 import express from 'express';
 import {
-  emailAuthController,
+  handlePostRegister,
 } from '../controllers';
 
 const authRouter = express.Router();
 
-authRouter.get('/email', emailAuthController);
+authRouter.post('/register/email', handlePostRegister);
 
 export default authRouter;
